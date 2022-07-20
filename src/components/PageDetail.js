@@ -21,12 +21,12 @@ const PageDetail = () => {
   const selectedItem = items.find((item) => item.id === Number(id));
 
   useEffect(() => {
-    if (typeof selectedItem === undefined || itemSelected === null) {
+    if (selectedItem === undefined || itemSelected === null) {
       setLoading(false);
       navigate("/");
     }
     setLoading(false);
-  });
+  }, [selectedItem, itemSelected, navigate]);
 
   if (loading) {
     return <p>cargando...</p>;
