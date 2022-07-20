@@ -36,7 +36,6 @@ import giga_inferno_4 from "../images/defenses/levels/giga_inferno/giga_inferno_
 import giga_inferno_5 from "../images/defenses/levels/giga_inferno/giga_inferno_5.png";
 
 /* --- CANNON --- */
-
 import cannon_1 from "../images/defenses/levels/cannon/cannon_1.png";
 import cannon_2 from "../images/defenses/levels/cannon/cannon_2.png";
 import cannon_3 from "../images/defenses/levels/cannon/cannon_3.png";
@@ -58,14 +57,34 @@ import cannon_18 from "../images/defenses/levels/cannon/cannon_18.png";
 import cannon_19 from "../images/defenses/levels/cannon/cannon_19.png";
 import cannon_20 from "../images/defenses/levels/cannon/cannon_20.png";
 
+/* --- ARCHER TOWER --- */
+import archer_tower_1 from "../images/defenses/levels/archer_tower/archer_tower_1.png";
+import archer_tower_2 from "../images/defenses/levels/archer_tower/archer_tower_2.png";
+import archer_tower_3 from "../images/defenses/levels/archer_tower/archer_tower_3.png";
+import archer_tower_4 from "../images/defenses/levels/archer_tower/archer_tower_4.png";
+import archer_tower_5 from "../images/defenses/levels/archer_tower/archer_tower_5.png";
+import archer_tower_6 from "../images/defenses/levels/archer_tower/archer_tower_6.png";
+import archer_tower_7 from "../images/defenses/levels/archer_tower/archer_tower_7.png";
+import archer_tower_8 from "../images/defenses/levels/archer_tower/archer_tower_8.png";
+import archer_tower_9 from "../images/defenses/levels/archer_tower/archer_tower_9.png";
+import archer_tower_10 from "../images/defenses/levels/archer_tower/archer_tower_10.png";
+import archer_tower_11 from "../images/defenses/levels/archer_tower/archer_tower_11.png";
+import archer_tower_12 from "../images/defenses/levels/archer_tower/archer_tower_12.png";
+import archer_tower_13 from "../images/defenses/levels/archer_tower/archer_tower_13.png";
+import archer_tower_14 from "../images/defenses/levels/archer_tower/archer_tower_14.png";
+import archer_tower_15 from "../images/defenses/levels/archer_tower/archer_tower_15.png";
+import archer_tower_16 from "../images/defenses/levels/archer_tower/archer_tower_16.png";
+import archer_tower_17 from "../images/defenses/levels/archer_tower/archer_tower_17.png";
+import archer_tower_18 from "../images/defenses/levels/archer_tower/archer_tower_18.png";
+import archer_tower_19 from "../images/defenses/levels/archer_tower/archer_tower_19.png";
+import archer_tower_20 from "../images/defenses/levels/archer_tower/archer_tower_20.png";
+
 /* HEROES */
 
 import barbarian_king from "../images/heroes/barbarian_king_80.png";
 import archer_queen from "../images/heroes/archer_queen_80.png";
 import grand_warden from "../images/heroes/grand_warden_55.png";
 import royal_champion from "../images/heroes/royal_champion_30.png";
-
-console.log(typeof grand_warden);
 
 export const initialState = [
   {
@@ -486,7 +505,7 @@ export const initialState = [
         id: 14,
         level: 14,
         damage_per_second: 110,
-        shot_damage: 88,
+        shot_damage: "88",
         price: "3.000.000",
         construction_time: "5 días",
         damage_points: "1.380",
@@ -496,7 +515,7 @@ export const initialState = [
         id: 15,
         level: 15,
         damage_per_second: 118,
-        shot_damage: 94.4,
+        shot_damage: "94.4",
         price: "4.500.000",
         construction_time: "6 días",
         damage_points: "1.500",
@@ -506,7 +525,7 @@ export const initialState = [
         id: 16,
         level: 16,
         damage_per_second: 124,
-        shot_damage: 99.2,
+        shot_damage: "99.2",
         price: "7.000.000",
         construction_time: "9 días",
         damage_points: "1.620",
@@ -516,7 +535,7 @@ export const initialState = [
         id: 17,
         level: 17,
         damage_per_second: 130,
-        shot_damage: 104,
+        shot_damage: "104",
         price: "9.000.000",
         construction_time: "12 días",
         damage_points: "1.740",
@@ -641,9 +660,311 @@ export const initialState = [
   },
   {
     id: 4,
-    category: "defenses",
     name: "Torre de arqueras",
+    description:
+      "Las torres de arqueras tienen mayor alcance que los cañones, y a diferencia de los cañones que pueden atacar a las unidades aéreas.",
     image: archer_tower,
+    category: "defenses",
+    levels: [
+      {
+        id: 1,
+        level: 1,
+        damage_per_second: 11,
+        shot_damage: "5.5",
+        price: "1000",
+        construction_time: "1 minuto",
+        damage_points: "380",
+
+        town_hall_required_level: 2,
+      },
+      {
+        id: 2,
+        level: 2,
+        damage_per_second: 15,
+        shot_damage: "7.5",
+        price: "2.000",
+        construction_time: "30 minutos",
+        damage_points: "420",
+
+        town_hall_required_level: 2,
+      },
+      {
+        id: 3,
+        level: 3,
+        damage_per_second: 19,
+        shot_damage: "9.5",
+        price: "5.000",
+        construction_time: "45 minutos",
+        damage_points: "460",
+
+        town_hall_required_level: 3,
+      },
+      {
+        id: 4,
+        level: 4,
+        damage_per_second: 25,
+        shot_damage: "12.5",
+        price: "20.000",
+        construction_time: "3 horas",
+        damage_points: "500",
+
+        town_hall_required_level: 4,
+      },
+      {
+        id: 5,
+        level: 5,
+        damage_per_second: 30,
+        shot_damage: "15",
+        price: "80.000",
+        construction_time: "8 horas",
+        damage_points: "540",
+
+        town_hall_required_level: 5,
+      },
+
+      {
+        id: 6,
+        level: 6,
+        damage_per_second: 35,
+        shot_damage: "17.5",
+        price: "180.000",
+        construction_time: "8 horas",
+        damage_points: "580",
+
+        town_hall_required_level: 5,
+      },
+
+      {
+        id: 7,
+        level: 7,
+        damage_per_second: 42,
+        shot_damage: "21",
+        price: "360.000",
+        construction_time: "12 horas",
+        damage_points: "630",
+
+        town_hall_required_level: 6,
+      },
+      {
+        id: 8,
+        level: 8,
+        damage_per_second: 48,
+        shot_damage: "23",
+        price: "600.000",
+        construction_time: "12 horas",
+        damage_points: "690",
+
+        town_hall_required_level: 7,
+      },
+      {
+        id: 9,
+        level: 9,
+        damage_per_second: 56,
+        shot_damage: "28",
+        price: "800.000",
+        construction_time: "16 horas",
+        damage_points: "750",
+
+        town_hall_required_level: 8,
+      },
+
+      {
+        id: 10,
+        level: 10,
+        damage_per_second: 63,
+        shot_damage: "31.5",
+        price: "1.000.000",
+        construction_time: "1 día",
+        damage_points: "810",
+
+        town_hall_required_level: 8,
+      },
+      {
+        id: 11,
+        level: 11,
+        damage_per_second: 70,
+        shot_damage: "35",
+        price: "1.200.000",
+        construction_time: "1 día y 12 horas",
+        damage_points: "890",
+        town_hall_required_level: 9,
+      },
+      {
+        id: 12,
+        level: 12,
+        damage_per_second: 75,
+        shot_damage: "37.5",
+        price: "1.800.000",
+        construction_time: "2 días",
+        damage_points: "970",
+        town_hall_required_level: 10,
+      },
+      {
+        id: 13,
+        level: 13,
+        damage_per_second: 80,
+        shot_damage: "40",
+        price: "2.400.000",
+        construction_time: "3 días",
+        damage_points: "1.050",
+        town_hall_required_level: 10,
+      },
+      {
+        id: 14,
+        level: 14,
+        damage_per_second: 92,
+        shot_damage: "46",
+        price: "3.600.000",
+        construction_time: "6 días",
+        damage_points: "1.130",
+        town_hall_required_level: 11,
+      },
+      {
+        id: 15,
+        level: 15,
+        damage_per_second: 104,
+        shot_damage: "52",
+        price: "5.000.000",
+        construction_time: "8 días",
+        damage_points: "1.230",
+        town_hall_required_level: 11,
+      },
+      {
+        id: 16,
+        level: 16,
+        damage_per_second: 116,
+        shot_damage: "58",
+        price: "7.500.000",
+        construction_time: "10 días",
+        damage_points: "1.330",
+        town_hall_required_level: 12,
+      },
+      {
+        id: 17,
+        level: 17,
+        damage_per_second: 122,
+        shot_damage: "61",
+        price: "9.500.000",
+        construction_time: "12 días",
+        damage_points: "1.430",
+        town_hall_required_level: 12,
+      },
+      {
+        id: 18,
+        level: 18,
+        damage_per_second: 128,
+        shot_damage: "64",
+        price: "11.500.000",
+        construction_time: "15 días",
+        damage_points: "1.510",
+        town_hall_required_level: 13,
+      },
+      {
+        id: 19,
+        level: 19,
+        damage_per_second: 134,
+        shot_damage: "67",
+        price: "13.000.000",
+        construction_time: "16 días",
+        damage_points: "1.600",
+        town_hall_required_level: 13,
+      },
+      {
+        id: 20,
+        level: 20,
+        damage_per_second: 140,
+        shot_damage: "70",
+        price: "17.500.000",
+        construction_time: "16 días",
+        damage_points: "1600",
+        town_hall_required_level: 14,
+      },
+    ],
+    size: "3x3",
+    distance: 10,
+    attack_speed: "0.5s",
+    damage_type: "Único objetivo",
+    unit_type: "Tierra y Aire",
+    amount_per_hall_town: [
+      {
+        id: 1,
+        amount: 0,
+      },
+      {
+        id: 2,
+        amount: 1,
+      },
+      {
+        id: 3,
+        amount: 1,
+      },
+      {
+        id: 4,
+        amount: 2,
+      },
+      {
+        id: 5,
+        amount: 3,
+      },
+      {
+        id: 6,
+        amount: 3,
+      },
+      {
+        id: 7,
+        amount: 4,
+      },
+      {
+        id: 8,
+        amount: 5,
+      },
+      {
+        id: 9,
+        amount: 6,
+      },
+      {
+        id: 10,
+        amount: 7,
+      },
+      {
+        id: 11,
+        amount: 8,
+      },
+      {
+        id: 12,
+        amount: 8,
+      },
+      {
+        id: 13,
+        amount: 8,
+      },
+      {
+        id: 14,
+        amount: 8,
+      },
+    ],
+    images: [
+      archer_tower_1,
+      archer_tower_2,
+      archer_tower_3,
+      archer_tower_4,
+      archer_tower_5,
+      archer_tower_6,
+      archer_tower_7,
+      archer_tower_8,
+      archer_tower_9,
+      archer_tower_10,
+      archer_tower_11,
+      archer_tower_12,
+      archer_tower_13,
+      archer_tower_14,
+      archer_tower_15,
+      archer_tower_16,
+      archer_tower_17,
+      archer_tower_18,
+      archer_tower_19,
+      archer_tower_20,
+    ],
   },
   {
     id: 5,
@@ -737,33 +1058,3 @@ export const initialState = [
     image: royal_champion,
   },
 ];
-// {
-//   id: 5,
-//   title: "Trampas",
-//   traps: [],
-// },
-// {
-//   id: 6,
-//   title: "Tropas",
-//   troops: [],
-// },
-// {
-//   id: 7,
-//   title: "Hechizos",
-//   spells: [],
-// },
-// {
-//   id: 8,
-//   title: "Mascotas",
-//   pets: [],
-// },
-// {
-//   id: 2,
-//   title: "Ejército",
-//   army: [],
-// },
-// {
-//   id: 3,
-//   title: "Recursos",
-//   means: [],
-// }, {

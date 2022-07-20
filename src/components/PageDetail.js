@@ -26,7 +26,7 @@ const PageDetail = () => {
       navigate("/");
     }
     setLoading(false);
-  }, [selectedItem, itemSelected, navigate]);
+  }, [selectedItem]);
 
   if (loading) {
     return <p>cargando...</p>;
@@ -45,7 +45,7 @@ const PageDetail = () => {
           <p>{selectedItem.description}</p>
         </div>
         <div style={{ zIndex: "-999" }} className="mb-5 mt-5">
-          <CarouselImages item={selectedItem} />
+          <CarouselImages item={selectedItem} id={id} />
         </div>
       </Stack>
       <LevelTable

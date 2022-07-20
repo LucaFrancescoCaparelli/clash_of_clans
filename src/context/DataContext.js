@@ -12,7 +12,6 @@ export const DataProvider = ({ children }) => {
   const [searchResults, setSearchResults] = useState([]);
 
   const saveItemSelected = (item) => {
-    console.log("saveItemSelected", item);
     setItemSelected(item);
   };
 
@@ -24,12 +23,10 @@ export const DataProvider = ({ children }) => {
     }
 
     setItems(initialState);
-    console.log({ items, filter });
-  }, [items, filter]);
+  }, [filter]);
 
   useEffect(() => {
     const filteredResults = items.filter((item) => {
-      console.log(item);
       return (
         item.name.toLowerCase().includes(term.toLowerCase()) ||
         item.category.toLowerCase().includes(term.toLowerCase())
@@ -37,7 +34,7 @@ export const DataProvider = ({ children }) => {
       );
     });
     setSearchResults(filteredResults);
-  }, [items, term]);
+  }, [term]);
 
   return (
     <DataContext.Provider

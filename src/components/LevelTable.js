@@ -2,8 +2,6 @@ import React from "react";
 import Table from "react-bootstrap/Table";
 import gold_coin from "../images/others/gold_icon.png";
 const LevelTable = ({ levels, town_hall_level }) => {
-  console.log(levels);
-
   return (
     <Table striped bordered responsive className="mt-4">
       <thead>
@@ -37,7 +35,7 @@ const LevelTable = ({ levels, town_hall_level }) => {
       </thead>
       <tbody>
         {levels.map((level) => (
-          <tr key={level.level}>
+          <tr key={level.level + 2}>
             <td>{level.level}</td>
 
             <td>{level.damage_per_second}</td>

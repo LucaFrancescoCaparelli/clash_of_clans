@@ -7,7 +7,7 @@ import Card from "react-bootstrap/Card";
 
 const ListItem = ({ item }) => {
   const { saveItemSelected } = useContext(DataContext);
-  console.log({ ITEEEEM: item });
+
   return (
     <Card style={{ width: "18rem", height: "28rem" }}>
       <Card.Img className="mt-5" variant="top" src={item.image} />

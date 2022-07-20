@@ -4,7 +4,7 @@ import DataContext from "../context/DataContext";
 
 function SelectBasicExample() {
   const { filter, setFilter } = useContext(DataContext);
-  console.log({ filter });
+
   return (
     <Form.Select
       aria-label="Filter"

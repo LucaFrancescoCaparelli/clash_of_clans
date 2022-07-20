@@ -6,18 +6,17 @@ const SearchBar = () => {
 
   return (
     <>
-      <Form.Label htmlFor="inputPassword5">Password</Form.Label>
+      <Form.Label htmlFor="inputFilterItems" style={{ width: "50%" }}>
+        Busca tu defensa o héroe favorito
+      </Form.Label>
       <Form.Control
         type="text"
         value={term}
-        id="inputPassword5"
-        aria-describedby="passwordHelpBlock"
+        placeholder="Buscar..."
+        id="inputFilterItems"
+        aria-describedby="inputFilterItems"
         onChange={(e) => setTerm(e.target.value)}
       />
-      <Form.Text id="passwordHelpBlock" muted>
-        Your password must be 8-20 characters long, contain letters and numbers,
-        and must not contain spaces, special characters, or emoji.
-      </Form.Text>
     </>
   );
 };
