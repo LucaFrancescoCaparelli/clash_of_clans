@@ -1,0 +1,124 @@
+.card {
+  background: #fff;
+  width: 8em;
+  border-radius: 0.6em;
+  margin: 1em;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 13px 27px -5px hsla(240, 30.1%, 28%, 0.25),
+    0 8px 16px -8px hsla(0, 0%, 0%, 0.3), 0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
+  transition: all ease 200ms;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer {
+  background-color: rgb(79, 79, 79);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  height: 4rem;
+}
+
+.container-fluid {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.vstack {
+  align-items: center !important;
+}
+
+.card-img-top {
+  width: 50% !important;
+}
+
+.card-body {
+  flex: 1 1 auto !important;
+  padding: 1rem 1rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  align-items: center;
+}
+
+a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+div.row {
+  margin-right: 0px;
+}
+
+div.container-fluid {
+  padding-right: 0px;
+}
+
+.card-text {
+  font-size: 0.9rem !important;
+}
+
+.townhall {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: 300px 25px;
+  background-image: url("/src/images/town_hall/town_halls.png");
+}
+.townhall7 {
+  background-position: -100px 0;
+}
+
+.townhall3 {
+  background-position: 0 0;
+}
+.townhall4 {
+  background-position: -25px 0;
+}
+.townhall5 {
+  background-position: -50px 0;
+}
+.townhall6 {
+  background-position: -75px 0;
+}
+.townhall7 {
+  background-position: -100px 0;
+}
+.townhall8 {
+  background-position: -125px 0;
+}
+.townhall9 {
+  background-position: -150px 0;
+}
+.townhall10 {
+  background-position: -175px 0;
+}
+.townhall11 {
+  background-position: -200px 0;
+}
+.townhall12 {
+  background-position: -225px 0;
+}
+.townhall13 {
+  background-position: -250px 0;
+}
+.townhall14 {
+  background-position: -275px 0;
+}
+
+td {
+  text-align: center !important;
+}
+
+th {
+  text-align: center !important;
+}
