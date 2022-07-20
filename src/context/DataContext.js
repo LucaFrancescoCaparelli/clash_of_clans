@@ -25,7 +25,7 @@ export const DataProvider = ({ children }) => {
 
     setItems(initialState);
     console.log({ items, filter });
-  }, [filter]);
+  }, [items, filter]);
 
   useEffect(() => {
     const filteredResults = items.filter((item) => {
@@ -37,7 +37,7 @@ export const DataProvider = ({ children }) => {
       );
     });
     setSearchResults(filteredResults);
-  }, [term]);
+  }, [items, term]);
 
   return (
     <DataContext.Provider

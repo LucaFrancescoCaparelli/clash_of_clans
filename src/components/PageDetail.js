@@ -17,14 +17,11 @@ const PageDetail = () => {
   const navigate = useNavigate();
 
   const { items, itemSelected } = useContext(DataContext);
-  const allState = useContext(DataContext);
 
-  const selectedItem = items.find((item) => item.id == id);
-  console.log(selectedItem);
+  const selectedItem = items.find((item) => item.id === Number(id));
 
   useEffect(() => {
     if (typeof selectedItem === undefined || itemSelected === null) {
-      console.log(typeof selectedItem === undefined || itemSelected === null);
       setLoading(false);
       navigate("/");
     }

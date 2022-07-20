@@ -60,7 +60,7 @@ const TownHallTable = ({ amount_per_hall_town }) => {
               <p>Disponible</p>
             </td>
             {amount_per_hall_town.map((town_hall_level) => {
-              if (town_hall_level.amount != 0) {
+              if (town_hall_level.amount !== 0) {
                 return (
                   <td key={town_hall_level.id}>{town_hall_level.amount}</td>
                 );

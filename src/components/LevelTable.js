@@ -20,7 +20,11 @@ const LevelTable = ({ levels, town_hall_level }) => {
             }}
           >
             Coste
-            <img style={{ paddingLeft: "5%" }} src={gold_coin} />
+            <img
+              style={{ paddingLeft: "5%" }}
+              src={gold_coin}
+              alt="gold coin"
+            />
           </th>
           {town_hall_level ? (
             <th>Cantidad de objetivos</th>

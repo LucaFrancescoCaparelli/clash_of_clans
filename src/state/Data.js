@@ -648,7 +648,6 @@ export const initialState = [
   {
     id: 5,
     category: "defenses",
-    category: "defenses",
     name: "Mortero",
     image: mortar,
   },
