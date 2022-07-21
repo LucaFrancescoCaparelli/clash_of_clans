@@ -1,12 +1,23 @@
-import Nav from "react-bootstrap/Nav";
+// import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+// import NavDropdown from "react-bootstrap/NavDropdown";
 
 function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Brand href="#home">
+        <img
+          style={{ width: "230px" }}
+          src="/clash_of_info_logo.png"
+          alt="clasf of info logo"
+        ></img>
+        <img
+          style={{ width: "80px" }}
+          src="/clash_of_clans_logo.png"
+          alt="clasf of clans shield"
+        ></img>
+      </Navbar.Brand>
+      {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
           <Nav.Link href="#features">Features</Nav.Link>
@@ -29,7 +40,7 @@ function Header() {
             Dank memes
           </Nav.Link>
         </Nav>
-      </Navbar.Collapse>
+      </Navbar.Collapse> */}
     </Navbar>
   );
 }

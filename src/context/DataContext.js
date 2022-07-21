@@ -6,7 +6,7 @@ const DataContext = createContext({});
 export const DataProvider = ({ children }) => {
   const [filter, setFilter] = useState("all");
   const [items, setItems] = useState([]);
-  const [itemSelected, setItemSelected] = useState(null);
+  const [itemSelected, setItemSelected] = useState([]);
 
   const [term, setTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
@@ -19,10 +19,14 @@ export const DataProvider = ({ children }) => {
     if (filter !== "all") {
       const filt = initialState.filter((items) => items.category === filter);
       setItems(filt);
+      setTerm("");
+      setSearchResults([]);
       return;
     }
 
     setItems(initialState);
+    setTerm("");
+    setSearchResults([]);
   }, [filter]);
 
   useEffect(() => {

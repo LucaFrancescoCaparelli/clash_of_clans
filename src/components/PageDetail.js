@@ -10,7 +10,7 @@ import LevelTable from "./LevelTable";
 import AttackTable from "./AttackTable";
 import TownHallTable from "./TownHallTable";
 import { useNavigate } from "react-router-dom";
-
+import Button from "react-bootstrap/Button";
 const PageDetail = () => {
   const [loading, setLoading] = useState(true);
   const { id } = useParams();
@@ -21,20 +21,27 @@ const PageDetail = () => {
   const selectedItem = items.find((item) => item.id === Number(id));
 
   useEffect(() => {
+    window.scroll({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
+  useEffect(() => {
     if (selectedItem === undefined || itemSelected === null) {
       setLoading(false);
       navigate("/");
     }
     setLoading(false);
-  }, [selectedItem]);
+  }, [selectedItem, itemSelected, navigate]);
 
   if (loading) {
     return <p>cargando...</p>;
   }
 
   return (
-    <Container className="mt-5">
+    <Container className="mt-5 pt-5">
       <Stack gap={3}>
+        <div className="d-flex" style={{ width: "100%" }}>
+          <Button onClick={() => navigate("/")}>Volver</Button>
+        </div>
         <div>
           <h2>{selectedItem.name}</h2>
         </div>

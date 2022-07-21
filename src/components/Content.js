@@ -13,11 +13,11 @@ const Content = () => {
 
   return (
     <Container fluid>
-      <Row className="mt-5 align-items-end">
-        <Col md={8}>
+      <Row className="mt-5 pt-5 align-items-end justify-content-around">
+        <Col xl={5} md={7}>
           <SearchBar />
         </Col>
-        <Col md={4}>
+        <Col xl={2} md={2}>
           <Select />
         </Col>
       </Row>
